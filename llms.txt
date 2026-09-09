@@ -1,0 +1,5 @@
+interop-openai
+
+First-party OpenAI interoperability for Tiinex — environment-specific grounding, capability integration, constraints and automation support over the provider-agnostic Tiinex Interop and Core contracts.
+
+Grounding boundary: follow repository-local Tasks under .topics/refactor and the controlling Business Turn-2 repository-decomposition frontier.
