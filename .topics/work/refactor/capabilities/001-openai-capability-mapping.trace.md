@@ -44,8 +44,8 @@ Repository-local work for this subarea only. Do not expand into sibling reposito
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: [001-openai-interoperability-isolated-frontier.trace.md](../001-openai-interoperability-isolated-frontier.trace.md)
-  - Value: FNC1__0WEqX1sJBvnKluOV22F0FeVRbyG2-nkg9zL-g
+  - Value: PkuaBiWtWIOkgmgxKYI8kOGIKybNLl-pGwTdv9mVSRM
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value: 8JQK5xXL3JOx2Ly-r2BOxLTLzF2WgO0_0h3_DdeIEAI
+  - Value: TOpWGZvNI1OhBDqrRayeaca4GVhImyj4zbEzZdp-Wes
