@@ -9,10 +9,10 @@
     - [relative](../001-processes.trace.md)
 - Current
   - Current Schema: [tiinex.topic.v1](https://github.com/Tiinex/docs/blob/302506f90537dc23d6f88ad0bd0bb9c97c6cf9f6/.topics/.schemas/core/topic/tiinex.topic.v1.schema.md)
-  - Created At: 2026-10-04 01:18:46
-  - Authors: Anchor
-  - Why: Keep ChatGPT-specific operating constraints groundable without tainting Core or portable Native semantics.
-  - Summary: OpenAI/ChatGPT host adaptation for volatile runtime state, carried-source preference, connector boundaries, and durable checkpoints.
+  - Created At: 2026-10-04 19:50:00
+  - Authors: Anchor; Sigma
+  - Why: Keep ChatGPT-specific operating constraints and package-first recipient delivery groundable without tainting Core or portable Native semantics.
+  - Summary: OpenAI/ChatGPT adaptation for volatile runtime state, carried-source preference, connector boundaries, single-package recipient transfer, and durable checkpoints.
   - Status: ready/local
 
 ---
@@ -69,6 +69,17 @@ When a Tiinex carrier is delivered through ChatGPT:
 
 ChatGPT UI affordances do not authorize changing that projection. If the exact Tooling transport text cannot be presented, preserve that as a transport limitation rather than inventing replacement routing prose.
 
+## ChatGPT Operator Completion Boundary
+
+When the current ChatGPT response asks another participant to perform a bounded next action, treat that as a recipient-transfer boundary rather than a conversational exception.
+
+- Manufacture and attach one canonical Handoff Package through Tiinex Tooling and present the exact Tooling-projected routing text adjacent to it.
+- Do not replace that package with a collection of patch files, repository ZIPs, status Markdown, recovery ZIPs, or prose instructions that the recipient must mentally combine. If such material matters, carry it in the qualified Workspace/package closure or reference it durably from the Handoff.
+- Human and LLM recipients use the same Tiinex transfer semantics. ChatGPT's conversational affordance does not weaken package completeness or make a human recipient the session's hidden recovery store.
+- For a non-blind human interaction, a compact TL;DR/status projection may accompany the delivery when it is fully derivable from the Handoff Package and clearly non-authoritative. It must not alter the exact routing text or introduce required context that exists only in chat.
+- For blind cold-start testing, do not add that semantic projection; preserve the stricter non-leading transport boundary.
+- If ChatGPT cannot attach or preserve the canonical package, report that exact host limitation and keep the transfer blocked/degraded rather than fragmenting the handoff silently.
+
 ## Conversation And Attachment Boundary
 
 - Chat messages may supply human intent, feedback, clarification, acceptance, or host-operating facts, but they are not a substitute for durable Tiinex authority when a reusable rule or work state must survive reduction/cold start.
@@ -102,4 +113,4 @@ If host/runtime behavior is uncertain, state the uncertainty and use the more co
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value: TSGvMPuqZj-EGD81PtZTi68j3E_Ja1_-ldyRITDVA9w
+  - Value: jmM8naTPe-qBjNyugZfmV4TiVcP4dm2jz4NgfZhtkZc
