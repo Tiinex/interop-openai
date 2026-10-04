@@ -17,6 +17,7 @@
     "./package.json": "./package.json"
   },
   "files": [
+    ".topics",
     "src",
     "README.md",
     "LICENSE",
@@ -36,5 +37,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "tiinex": {
+    "contentSource": {
+      "workspaceIds": [
+        "interop-openai"
+      ]
+    }
   }
 }

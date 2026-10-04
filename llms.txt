@@ -1,8 +1,7 @@
-interop-openai
+# Tiinex/interop-openai LLM Bootstrap
 
-First-party OpenAI interoperability for Tiinex — environment-specific grounding, capability integration, constraints and automation support over provider-agnostic Tiinex Interop and Core contracts.
+This repository uses Tiinex. `.topics/**` and qualified source material are semantic/provenance authority; this file is only a bootstrap hint.
 
-Grounding boundary:
-- Start from `.topics/.workspaces/tiinex-interop-openai.workspace.md` and the Workspace fresh-start Reduction under `.topics/reductions/workspace/`.
-- Historical refactor work is reduced; no prior refactor Task is current. Future OpenAI-specific work starts from a new explicit bounded Task with truthful Project ancestry.
-- Do not move provider-agnostic or shared semantic mechanics here merely because an OpenAI host exposes the first concrete need.
+Use Tiinex Tooling to discover and qualify the Workspace entrypoint under `.topics/.workspaces`, then follow only the qualified artifacts and processes applicable to the current task.
+
+Do not use `llms.txt` or `README.md` as an artifact index, current-work declaration, or substitute for Tiinex discovery/grounding.

@@ -1,12 +1,12 @@
 # interop-openai
 
-First-party OpenAI interoperability for Tiinex — environment-specific grounding, capability integration, constraints and automation support over the provider-agnostic Tiinex Interop and Core contracts.
+First-party OpenAI interoperability for Tiinex: environment-specific grounding, capability integration, constraints, and automation support over provider-agnostic Tiinex Interop and Core contracts.
 
-## Fresh-start boundary
+## Boundary
 
-Own OpenAI-specific environment grounding, limitations, workarounds and capability integration without making Handoff or bootstrap semantics OpenAI-specific.
+OpenAI/ChatGPT-specific host behavior belongs here. Portable Handoff, Parent, Role, Workspace, carrier, grounding, and other shared semantics remain with their normal owners, and Core remains host-neutral.
 
-The repository remains intentionally minimal after the Major 017 fresh-start reduction. No historical extraction/refactor Task is current by default; future OpenAI-specific runtime work starts from a new explicit bounded Task with truthful Project ancestry. Do not move implementation here merely to populate the package.
+Current host-specific Process/work material is discovered from qualified `.topics` content through Tiinex Tooling. This README intentionally does not maintain a parallel index of those artifacts or declare which one is current/applicable.
 
 ## Distribution
 
