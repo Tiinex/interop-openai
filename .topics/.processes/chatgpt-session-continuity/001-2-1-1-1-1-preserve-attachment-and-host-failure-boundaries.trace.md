@@ -102,8 +102,8 @@
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: [001-2-1-1-1-deliver-canonical-package-at-recipient-boundaries.trace.md](001-2-1-1-1-deliver-canonical-package-at-recipient-boundaries.trace.md)
-  - Value: e9bwBWNnH09fjeUWr8owjGqQdVBs3jqjuqTk33q2_WY
+  - Value: 6_jdbwjx15RUgNjN7khIfDnoY6zVVTYGRMIdWbE5Pp4
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value: Hx8EuJB6PX1slTf6dqpIwztVwAdqCu6i2KX3w-v63eA
+  - Value:CFOfofHUzCKjOAqb3J3hEsr0WUaMCgGTVIInkwj8yjI

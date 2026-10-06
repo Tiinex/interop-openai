@@ -8,7 +8,7 @@
   - Origin:
     - [relative](../001-processes.trace.md)
 - Current
-  - Current Schema: [tiinex.topic.v1](https://github.com/Tiinex/docs/blob/302506f90537dc23d6f88ad0bd0bb9c97c6cf9f6/.topics/.schemas/core/topic/tiinex.topic.v1.schema.md)
+  - Current Schema: [tiinex.process.v1](https://github.com/Tiinex/docs/blob/2262a1c4b35e887d116d0d01a864074a9f1641c2/.topics/.schemas/process/tiinex.process.v1.schema.md)
   - Created At: 2026-10-04 19:50:00
   - Authors: Anchor; Sigma
   - Why: Keep ChatGPT-specific operating constraints and package-first recipient delivery groundable without tainting Core or portable Native semantics.
@@ -19,19 +19,55 @@
 
 # ChatGPT Session Continuity And Source Discipline
 
-## Purpose
+## Process Identity
+
+- Name: ChatGPT Session Continuity And Source Discipline
+- Version: 1
+- Canonical Identifier: tiinex.process.chatgpt-session-continuity.v1
+- Human Label: ChatGPT Session Continuity And Source Discipline
+
+## Purpose And Scope
+
+- Purpose: Adapt portable session grounding and continuity behavior to the ChatGPT/OpenAI host without making those host details part of Core or portable Tiinex semantics.
+- Semantic Boundary: Defines reusable ChatGPT Session Continuity And Source Discipline process semantics; it does not prove invocation, execution, authority, acceptance, current work, or completion.
+- Intended Domains: qualified Tiinex work for the ChatGPT Session Continuity And Source Discipline process
+- Not Intended For: inferring applicability from carriage, directory placement, filename order, Role presence, or host presentation
+
+## Applicability And Conditions
+
+- Applicability Meaning: applicable only when a qualified Entry, Handoff, controlling work artifact, relation, invocation, or other owning authority selects this reusable Process for the bounded work.
+- Unknown Meaning: if applicability, authority, entry, or governing work is unresolved, Process applicability remains unresolved rather than being inferred from discovery or proximity.
+
+## Process Topology
+
+- Topology Meaning: typed Transition Definitions and qualified Relations in this Process lineage define reusable positions and durable non-parent topology where represented.
+- Entry Meaning: Process entry is established by qualified invocation/context and typed topology; semantic Parent and filename order do not independently select an executable entry.
+- Outcome Meaning: outcomes are established by qualified topology plus real execution/return/evidence artifacts; Process definition presence does not establish an outcome.
+- Transition Family: chatgpt-session-continuity
+
+## Interpretation Limits
+
+- Does Not Prove: that this Process ran, is current, was accepted for a particular context, or grants mutation authority.
+- Must Not Be Inferred: that semantic Parent, filename lineage, directory position, carrier presence, or apparent chronology is executable Process topology or current-work authority.
+- Execution Boundary: typed Process topology defines reusable semantics; real work lineage, qualified invocation/context, Handoffs, Returns/Reductions, Evidence, and accepting authority remain the truth about what actually happened.
+
+## Related Artifacts
+
+### Preserved Legacy Definition Notes
+
+### Purpose
 
 Adapt portable session grounding and continuity behavior to the ChatGPT/OpenAI host without making those host details part of Core or portable Tiinex semantics.
 
 This process is an environment profile. It does not redefine Handoff, carrier, Parent, Role, Workspace, Process applicability, or authority.
 
-## When This Process Applies
+### When This Process Applies
 
 Apply this process only when the active execution target is ChatGPT/OpenAI and the session explicitly selects or carries this host adaptation as relevant grounding material.
 
 Do not infer applicability merely because an OpenAI package, connector, chat transcript, or model is present.
 
-## Runtime Survivability
+### Runtime Survivability
 
 - Treat the host's working filesystem and temporary runtime paths, including `/mnt/data`, as operational state rather than durable project authority.
 - Important progress must not exist only in volatile runtime state when loss would require reconstructing meaningful work from chat chronology.
@@ -39,7 +75,7 @@ Do not infer applicability merely because an OpenAI package, connector, chat tra
 - A checkpoint should be driven by meaningful progress and survivability risk, not by every message or tool call.
 - Do not claim that host retention guarantees semantic completeness; the carrier remains the explicit recoverable state boundary.
 
-## Carried Source Preference
+### Carried Source Preference
 
 When a Handoff Package or Workspace representation already carries qualified material needed by the current work:
 
@@ -50,7 +86,7 @@ When a Handoff Package or Workspace representation already carries qualified mat
 
 Do not fetch a carried Parent or Workspace artifact again from GitHub merely because the connector is convenient. Live repository state may differ from the exact carried bytes selected by the current handoff/context.
 
-## GitHub Connector Boundary
+### GitHub Connector Boundary
 
 - The ChatGPT GitHub connector is a host capability, not semantic authority.
 - Repository read/search is a recovery/source-access mechanism when qualified carried material is unavailable or an explicit current external source is required.
@@ -58,7 +94,7 @@ Do not fetch a carried Parent or Workspace artifact again from GitHub merely bec
 - Remote mutation through a connector is not implied by connector availability, repository access, or `grounded-to-act` state. It requires a separate explicit bounded remote-mutation authorization and the applicable landing/execution process.
 - When a local/carried working copy is the selected work surface, keep edits local until the explicit landing boundary instead of silently mutating the remote repository.
 
-## ChatGPT Handoff Delivery
+### ChatGPT Handoff Delivery
 
 When a Tiinex carrier is delivered through ChatGPT:
 
@@ -69,7 +105,7 @@ When a Tiinex carrier is delivered through ChatGPT:
 
 ChatGPT UI affordances do not authorize changing that projection. If the exact Tooling transport text cannot be presented, preserve that as a transport limitation rather than inventing replacement routing prose.
 
-## ChatGPT Operator Completion Boundary
+### ChatGPT Operator Completion Boundary
 
 When the current ChatGPT response asks another participant to perform a bounded next action, treat that as a recipient-transfer boundary rather than a conversational exception.
 
@@ -80,25 +116,25 @@ When the current ChatGPT response asks another participant to perform a bounded 
 - For blind cold-start testing, do not add that semantic projection; preserve the stricter non-leading transport boundary.
 - If ChatGPT cannot attach or preserve the canonical package, report that exact host limitation and keep the transfer blocked/degraded rather than fragmenting the handoff silently.
 
-## Conversation And Attachment Boundary
+### Conversation And Attachment Boundary
 
 - Chat messages may supply human intent, feedback, clarification, acceptance, or host-operating facts, but they are not a substitute for durable Tiinex authority when a reusable rule or work state must survive reduction/cold start.
 - Files returned or attached in the conversation may serve as transport/recovery surfaces when their identity is explicit; attachment presence alone does not make their contents authoritative or current.
 - If a user supplies visual recordings for acceptance/testing, treat them as bounded observational evidence. Do not infer missing audio or hidden interaction state.
 
-## Human Interaction Boundary
+### Human Interaction Boundary
 
 Prefer a small number of meaningful human acceptance checks over repeated confirmation turns. Ask for human action when the process truly reaches a human gate, an external landing/push is required, or the host cannot safely perform the action itself.
 
 Do not make the human act as hidden memory for state that should have been preserved in a carrier, Process, Role, Decision, or other durable artifact.
 
-## Failure Policy
+### Failure Policy
 
 If the host cannot access a required carried file, connector, attachment, or local working copy, preserve the exact missing capability/material as a blocker. Do not substitute a different live source silently.
 
 If host/runtime behavior is uncertain, state the uncertainty and use the more conservative survivability boundary rather than inventing a platform guarantee.
 
-## Interpretation Limits
+### Interpretation Limits
 
 - Does Not Establish: that ChatGPT storage is permanently durable, that GitHub connector results are authoritative for carried state, that connector write is authorized, that a user message is a Handoff, or that an attachment is accepted/current semantic authority.
 - Must Not Be Used To Claim: that OpenAI-specific behavior belongs in Core; that every ChatGPT session requires GitHub; that every turn requires a checkpoint; or that this process applies when another host is active.
@@ -113,4 +149,4 @@ If host/runtime behavior is uncertain, state the uncertainty and use the more co
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value: jmM8naTPe-qBjNyugZfmV4TiVcP4dm2jz4NgfZhtkZc
+  - Value:LyLJfzjOwuSGaMwd8havqerquSgn5MBn4DaWpcKwMY0

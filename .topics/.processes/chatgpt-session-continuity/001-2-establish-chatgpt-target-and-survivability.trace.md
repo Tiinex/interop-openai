@@ -2,7 +2,7 @@
 
 - Envelope Schema: [tiinex.root.v1](https://github.com/Tiinex/docs/blob/302506f90537dc23d6f88ad0bd0bb9c97c6cf9f6/.topics/.schemas/tiinex.root.v1.schema.md)
 - Parent
-  - Parent Schema: [tiinex.topic.v1](https://github.com/Tiinex/docs/blob/302506f90537dc23d6f88ad0bd0bb9c97c6cf9f6/.topics/.schemas/core/topic/tiinex.topic.v1.schema.md)
+  - Parent Schema: [tiinex.process.v1](https://github.com/Tiinex/docs/blob/2262a1c4b35e887d116d0d01a864074a9f1641c2/.topics/.schemas/process/tiinex.process.v1.schema.md)
   - Created At: 2026-10-04 19:50:00
   - Trace: [001-chatgpt-session-continuity-and-source-discipline-process.trace.md](001-chatgpt-session-continuity-and-source-discipline-process.trace.md)
   - Origin:
@@ -102,8 +102,8 @@
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: [001-chatgpt-session-continuity-and-source-discipline-process.trace.md](001-chatgpt-session-continuity-and-source-discipline-process.trace.md)
-  - Value: jmM8naTPe-qBjNyugZfmV4TiVcP4dm2jz4NgfZhtkZc
+  - Value: LyLJfzjOwuSGaMwd8havqerquSgn5MBn4DaWpcKwMY0
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value: H9rLYXIAQu5wcYQQavPao0L6VVCNzvGyAx7qZq3oUrM
+  - Value:JbPWL1FE8Z2LbLZLR83eDNN8yVSda5boS3cMQjPx1FE

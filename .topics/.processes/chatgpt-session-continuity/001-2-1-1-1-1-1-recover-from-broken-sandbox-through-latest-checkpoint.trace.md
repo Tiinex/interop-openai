@@ -73,6 +73,38 @@
 - Applicability Meaning: applicable when the current ChatGPT sandbox or attachment/runtime surface is observed to be broken, repeatedly failing, materially unresponsive, or otherwise unsafe to trust for continued working-state mutation
 - Unknown Meaning: if sandbox health is merely uncertain, first preserve a checkpoint and use the conservative host boundary; do not declare a hard failure solely from chat length or subjective slowness
 
+## Emergency Recovery Status Contract
+
+When the ChatGPT sandbox/runtime is judged broken or materially unreliable, render a compact operator status projection headed `EMERGENCY RECOVERY` and use the shared status legend. Prefer this shape when the corresponding facts are qualified:
+
+```text
+EMERGENCY RECOVERY   ⚠️
+
+SANDBOX?          ❌ BROKEN / UNRELIABLE
+CONTINUE HERE?    ❌
+NEW CHAT?         ✅ REQUIRED
+BRANCH?           ❌ NOT AS RECOVERY AUTHORITY
+CHECKPOINT?       ✅ <exact latest safe package/checkpoint>
+UPLOAD AFTER?     ✅
+TRANSPORT TEXT?   ✅ SAVED / ◯ REGENERATE EXTERNALLY
+RECOVERY DELTA?   ◯ IF NEEDED AFTER GROUNDING
+HUMAN ACTION?     Start fresh chat + upload exact package
+COMMIT / PUSH?    ❌ unless separately required
+
+NEXT?
+→ bootstrap exact checkpoint
+→ complete package grounding
+→ apply bounded recovery delta only afterwards when needed
+```
+
+Presentation rules:
+
+- Put explanatory diagnosis/context above the status projection when useful.
+- Put the status projection at the bottom of the ChatGPT response so the most actionable state is easiest to find.
+- Place the exact Handoff/checkpoint package link immediately under the status projection; place exact saved transport text adjacent when available.
+- If a suggested ChatGPT branch/session title is shown, render conversational dimensions with spaces around separators, for example `1 - 1 - 1 (Recovery Checkpoint)`.
+- `EMERGENCY RECOVERY` is a host/operator presentation state. It is not a Tiinex Handoff, Role transfer, acceptance, currentness, or mutation authority.
+
 ## Recovery Procedure Boundary
 
 - Stop relying on the current sandbox as a source of durable working state and stop further mutation that would make recovery depend on that runtime.
@@ -125,8 +157,8 @@ The recovery delta:
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: [001-2-1-1-1-1-preserve-attachment-and-host-failure-boundaries.trace.md](001-2-1-1-1-1-preserve-attachment-and-host-failure-boundaries.trace.md)
-  - Value: Hx8EuJB6PX1slTf6dqpIwztVwAdqCu6i2KX3w-v63eA
+  - Value: CFOfofHUzCKjOAqb3J3hEsr0WUaMCgGTVIInkwj8yjI
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value: EkoxPUUHSGibr0SmeVmD71DVjfGLbMteLqWTUyLS_bc
+  - Value:EDc6mhtfqz7Ww_yHWwUy-BAo_G9AC0wcvWrL-QURsNU

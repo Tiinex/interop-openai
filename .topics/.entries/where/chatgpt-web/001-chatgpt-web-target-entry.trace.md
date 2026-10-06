@@ -58,9 +58,26 @@
 
 - ChatGPT continuity and source discipline
   - Reference: ../../../.processes/chatgpt-session-continuity/001-chatgpt-session-continuity-and-source-discipline-process.trace.md
-  - Purpose: Supply the OpenAI-owned host adaptation for package-first recovery, carried-source preference, attachment delivery, runtime survivability and human interaction boundaries.
+  - Purpose: Supply the OpenAI-owned host adaptation for package-first recovery, carried-source preference, attachment delivery, runtime survivability, grounded checkpoint/emergency status presentation and human interaction boundaries.
   - Label: ChatGPT Session Continuity And Source Discipline
   - Qualification Notes: Reference presence makes this material relevant to target grounding; its own applicability/execution semantics remain independently authoritative.
+
+## Operator Continuity Presentation
+
+When this Target Entry is active, qualify the referenced ChatGPT continuity process early enough that checkpoint and broken-sandbox behavior need not be invented under pressure. Target selection makes the host guidance discoverable/relevant; it still does not independently make a Process applicable or grant authority.
+
+Use the grounded status legend for compact operator projections:
+
+- `✅` = yes / recommended / required when stated
+- `◯` = optional / not necessary
+- `❌` = no / do not
+- `⚠️` = attention / degraded or emergency state
+
+For ordinary checkpoint/recovery responses, place the compact status projection near the bottom of the message and place the exact package link immediately below it. Put deeper explanation above so the operator can stop at the bottom when only disposition matters.
+
+For a broken/unreliable ChatGPT sandbox, use the qualified `Recover From Broken Sandbox Through Latest Checkpoint` transition and its `EMERGENCY RECOVERY` projection rather than improvising a new recovery flow. A fresh chat plus exact checkpoint package is the conservative recovery path; branch context is not durable recovery authority.
+
+When suggesting ChatGPT conversation titles, render branch dimensions with spaces around separators, for example `1 - 1 - 1 (Recovery Checkpoint)`. This is host-facing presentation only and does not alter Tiinex carrier dimensions or semantic lineage.
 
 ## Target Compatibility
 
@@ -83,4 +100,4 @@
 
 - sha256-base64url-c14n-v2
   - Towards: self
-  - Value:iOf68AgCGqxFszjkaD54i0P72-Ovnd1gSTjDc84lAgE
+  - Value:gAsxzZ-fHLIAqV0r6o1ziKTKBCANiiF3eJir9XhY_yo
