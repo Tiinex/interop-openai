@@ -75,6 +75,8 @@ Use the grounded status legend for compact operator projections:
 
 For ordinary checkpoint/recovery responses, place the compact status projection near the bottom of the message and place the exact package link immediately below it. Put deeper explanation above so the operator can stop at the bottom when only disposition matters.
 
+For a Tiinex Handoff Package download, display the **exact Core-projected `humanOutput.primary.filename`** and link the verified `primaryOutput.path` without a descriptive/short-name alias. Before offering an attachment, compare its basename and bytes with the actual Core manufacture receipt; use the bounded `tools/verify-chatgpt-carrier-download.mjs` host check when available. A ChatGPT download failure does **not** authorize manually renaming an otherwise canonical carrier: retry the canonical link or explicitly report the host limitation. If the browser itself relabels a saved/downloaded attachment, distinguish that observable UI label from the original Core-projected filename. This rule guards host presentation, not carrier lineage authority or semantic Parent resolution.
+
 For a broken/unreliable ChatGPT sandbox, use the qualified `Recover From Broken Sandbox Through Latest Checkpoint` transition and its `EMERGENCY RECOVERY` projection rather than improvising a new recovery flow. A fresh chat plus exact checkpoint package is the conservative recovery path; branch context is not durable recovery authority.
 
 When suggesting ChatGPT conversation titles, render branch dimensions with spaces around separators, for example `1 - 1 - 1 (Recovery Checkpoint)`. This is host-facing presentation only and does not alter Tiinex carrier dimensions or semantic lineage.
@@ -100,4 +102,4 @@ When suggesting ChatGPT conversation titles, render branch dimensions with space
 
 - sha256-base64url-c14n-v2
   - Towards: self
-  - Value:gAsxzZ-fHLIAqV0r6o1ziKTKBCANiiF3eJir9XhY_yo
+  - Value:Q2QPkKJl7YLv2hS-rdH63_5T3AG4yI-quUtRh1OCvsc
