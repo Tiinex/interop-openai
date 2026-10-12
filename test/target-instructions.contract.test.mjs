@@ -4,7 +4,8 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = new URL('../', import.meta.url);
-const annotationPath = new URL('../.topics/.entries/where/chatgpt-web/001-chatgpt-web-target-instructions.trace.md', import.meta.url);
+const annotationPath = new URL('../.topics/.entries/where/chatgpt-web/002-chatgpt-web-operator-guide.trace.md', import.meta.url);
+const terminalAnnotationPath = annotationPath;
 const targetPath = new URL('../.topics/.entries/where/chatgpt-web/001-chatgpt-web-target-entry.trace.md', import.meta.url);
 
 test('human-only annotation binds exact target identity, not Parent or Target Material', async () => {
@@ -20,8 +21,8 @@ test('human-only annotation binds exact target identity, not Parent or Target Ma
   assert.match(annotation, /do not add this guide to the recipient's instruction prompt/);
 });
 
-test('operator guide preserves manual transport and cited privacy boundaries', async () => {
-  const text = await readFile(annotationPath, 'utf8');
+test('self-contained current operator guide preserves manual transport and cited privacy boundaries', async () => {
+  const text = await readFile(terminalAnnotationPath, 'utf8');
   assert.match(text, /https:\/\/openai\.com\/policies\/terms-of-use\//);
   assert.match(text, /https:\/\/openai\.com\/policies\/privacy-policy\//);
   assert.match(text, /https:\/\/help\.openai\.com\/en\/articles\/7730893-data-controls-in-chatgpt/);

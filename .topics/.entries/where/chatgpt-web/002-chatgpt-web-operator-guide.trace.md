@@ -1,19 +1,13 @@
 # Continuity Context
 
 - Envelope Schema: [tiinex.root.v1](https://github.com/Tiinex/docs/blob/302506f90537dc23d6f88ad0bd0bb9c97c6cf9f6/.topics/.schemas/tiinex.root.v1.schema.md)
-- Parent
-  - Parent Schema: tiinex.annotation.v1
-  - Created At: 2026-10-11 13:36:18
-  - Trace: [001-chatgpt-web-target-instructions.trace.md](001-chatgpt-web-target-instructions.trace.md)
-  - Origin:
-    - [relative](001-chatgpt-web-target-instructions.trace.md)
 - Current
   - Current Schema: tiinex.annotation.v1
-  - Created At: 2026-10-11 14:32:56
-  - Authors: Anchor
-  - Why: Make host guidance readable without changing recipient transport or source Target semantics
-  - Summary: Human-facing transport help with concrete project naming and simplified steps
-  - Status: ready/local
+  - Created At: 2026-10-12 01:36:23
+  - Authors: ChatGPT (grounding-analysis collaborator; bounded Anchor Role)
+  - Why: Consolidate competing annotated root and successor into one cold-groundable companion without synthetic semantic Parent
+  - Summary: Self-contained latest ChatGPT Web human operator manual transport and privacy guide
+  - Status: draft/local
 
 ---
 
@@ -75,7 +69,7 @@ Turning off optional settings does not disable all security logging or guarantee
 
 ## Annotation Provenance
 
-- Annotation Source: Tiinex operator feedback plus linked first-party OpenAI service terms and Help Center explanations.
+- Annotation Source: The latest qualified predecessor ChatGPT Web operator annotation, with the earlier annotation chain recoverable from the exact predecessor carrier; linked first-party OpenAI terms and Help Center explanations. No role/transfer or Parent instruction inheritance.
 - Annotation Method: Human-oriented summary and bounded provider-source review; links are guidance, not immutable attestations of provider policy.
 - Created By: Anchor
 - Human Input Boundary: This guide reflects operator preferences; it must not be inferred as a platform promise or silent recipient instruction.
@@ -93,12 +87,10 @@ Turning off optional settings does not disable all security logging or guarantee
 
 ---
 
+---
+
 # Continuity Integrity
 
 - [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
-  - Towards: [001-chatgpt-web-target-instructions.trace.md](001-chatgpt-web-target-instructions.trace.md)
-  - Value: o4ViFX2a8TqiZrlNXGhi5EsWNYHVzzq-9hcOc-FGZXQ
-
-- [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value: 54D6TGb92qP130ZiHKfl-e-JJGYl0hkX31eC6AHX8Xg
+  - Value: vgTXwauxYMQl-6R--aWK47Tfc6pbZppLQyYzJRgX-1c
