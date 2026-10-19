@@ -38,3 +38,17 @@ test('README states policy boundary without acting as a current-artifact index',
   assert.match(text, /does not establish that an Annotation is current/);
   assert.match(text, /does not automate the ChatGPT consumer interface/);
 });
+
+
+test('ChatGPT conversation routing keeps inferred addressees separate from participant authority', async () => {
+  const target = await readFile(targetPath, 'utf8');
+  assert.match(target, /## Conversational Speaker And Addressee Routing/);
+  assert.match(target, /first selected Participant Role is the tentative primary conversational contact/);
+  assert.match(target, /formal Handoff.*no declared participants/);
+  assert.match(target, /qualified `From` Role\/capacity/);
+  assert.match(target, /unquoted explicit prefix or self-identification/);
+  assert.match(target, /pasted, quoted or forwarded material/);
+  assert.match(target, /Never silently rewrite the persistent operator\/holder identity/);
+  assert.match(target, /If a switch affects acceptance, authorization or irreversible action/);
+  assert.match(target, /not a Holder Relationship, Role assignment, Handoff endpoint or delegation rule/);
+});

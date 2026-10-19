@@ -2,11 +2,11 @@
 
 - Envelope Schema: [tiinex.root.v1](https://github.com/Tiinex/docs/blob/302506f90537dc23d6f88ad0bd0bb9c97c6cf9f6/.topics/.schemas/tiinex.root.v1.schema.md)
 - Current
-  - Current Schema: [tiinex.entry.target.v1](https://github.com/Tiinex/docs/blob/302506f90537dc23d6f88ad0bd0bb9c97c6cf9f6/.topics/.schemas/entry/target/tiinex.entry.target.v1.schema.md)
-  - Created At: 2026-10-05 19:18:00
-  - Authors: Anchor; Sigma
-  - Why: Keep ChatGPT Web environment capabilities, limitations and continuity adaptation discoverable as a target-specific Entry without tainting provider-neutral Entry semantics.
-  - Summary: OpenAI-owned Target Entry for composing portable purpose Entries with the ChatGPT Web execution environment.
+  - Current Schema: [tiinex.entry.target.v1](https://github.com/Tiinex/docs/blob/2262a1c4b35e887d116d0d01a864074a9f1641c2/.topics/.schemas/entry/target/tiinex.entry.target.v1.schema.md)
+  - Created At: 2026-10-19 12:11:37
+  - Authors: Anchor (bounded explicit-session)
+  - Why: Prevent inferred participant contact and role-swapping cues from becoming Holder authority
+  - Summary: Qualified first response, recovery transport and conservative conversational speaker/addressee routing
   - Status: ready/local
 
 ---
@@ -77,6 +77,22 @@ For ordinary checkpoint/recovery responses, place the compact status projection 
 
 For a Tiinex Handoff Package download, display the **exact Core-projected `humanOutput.primary.filename`** and link the verified `primaryOutput.path` without a descriptive/short-name alias. Before offering an attachment, compare its basename and bytes with the actual Core manufacture receipt; use the bounded `tools/verify-chatgpt-carrier-download.mjs` host check when available. A ChatGPT download failure does **not** authorize manually renaming an otherwise canonical carrier: retry the canonical link or explicitly report the host limitation. If the browser itself relabels a saved/downloaded attachment, distinguish that observable UI label from the original Core-projected filename. This rule guards host presentation, not carrier lineage authority or semantic Parent resolution.
 
+## First-Response And Successor-Transport Verification
+
+- First Response: Treat the carried `Start` as an execution prerequisite, not an optional reference. Before asserting that a newly received package, Entry or Session Role is qualified, directly read Start and follow its exact bootstrap/orient commands. If the host cannot execute the first-contact check, state that limitation and do not imply it already passed. A later successful replay is a later result, never proof of a successful first response.
+- Successor Transport: Before offering the next ChatGPT Web continuation package to a person, generate and review transport using the existing qualified Core Guided Entry/transport operation, with the operator-confirmed purpose Entry, Target, Primary Session Role and participant selections required for the intended next session. Compare the resulting full transport against the confirmed choices. A generic Start-only transport is not equivalent to that explicitly selected Guided Entry transport. Do not silently omit choices known to be confirmed for the requested continuation; if they cannot be qualified, state the blocker and request selection instead of manufacturing identity.
+- Authority Limit: These are first-contact and presentation controls. They do not modify a carrier, preserve an unconfirmed session role automatically, select a Handoff route, establish a holder or participant, accept work, or grant remote mutations. Record failed first-contact order as failed even when a later Tooling replay succeeds.
+
+## Conversational Speaker And Addressee Routing
+
+This is a **ChatGPT conversation presentation rule**, not a Holder Relationship, Role assignment, Handoff endpoint or delegation rule. A Role selected as context may guide who an answer is *addressed to*; it cannot by itself establish that the person writing is its holder. Preserve the canonical `explicit-session`, `explicit-participation` and `handoff` boundaries separately.
+
+- **Explicit first:** When the operator has explicitly selected and qualified their own participant Role for the receiving chat, address that operator in that bounded capacity. When the current speaker expressly identifies a different Role/person in an unquoted conversation turn (for example `Axiom:`), treat that as a **speaker cue for communication** while separately qualifying any authority-bearing claim. A prefix in pasted, quoted or forwarded material is not automatically a live speaker change.
+- **Ordinary default:** Without an explicit operator-participant binding or newer speaker cue, the **first selected Participant Role is the tentative primary conversational contact**. Address concise results and decision-relevant information with its preferences, but do not assert that the physical operator is its holder, that it has accepted work or that other participants have received the message. Other selected participants may be reached through that contact or may speak directly later; neither possibility is established by order alone.
+- **Formal Handoff fallback:** When a qualified, selected **formal Handoff** has no declared participants, its qualified `From` Role/capacity may be a **tentative conversational contact**, if it is material and relevant. This is not evidence that the sender is currently typing, is physically present, or accepted the Handoff. Do not use package uploader, transport sender, `Authors`, or a carrier filename as a substitute for qualified `From`. When no grounded Role contact exists, address the chat operator neutrally.
+- **Role swaps:** In a live conversation, an unquoted explicit prefix or self-identification can update the **current conversational speaker** for following unprefixed messages until superseded or corrected. Never silently rewrite the persistent operator/holder identity, participant assignment or Handoff endpoints. If a switch affects acceptance, authorization or irreversible action, require the independently qualified binding or ask for clarification; do not treat an ambiguous label as consent.
+- **Communication:** Report progress, uncertainty, blockers and the next *actual* human gate to the current conversational contact; do not force that contact to debug routine Tooling. Where identities are tentative, speak naturally without presenting the guess as a verified fact. Avoid repeat confirmation for ordinary low-risk status; seek clarification only when the distinction materially affects a decision or action.
+
 For a broken/unreliable ChatGPT sandbox, use the qualified `Recover From Broken Sandbox Through Latest Checkpoint` transition and its `EMERGENCY RECOVERY` projection rather than improvising a new recovery flow. A fresh chat plus exact checkpoint package is the conservative recovery path; branch context is not durable recovery authority.
 
 When suggesting ChatGPT conversation titles, render branch dimensions with spaces around separators, for example `1 - 1 - 1 (Recovery Checkpoint)`. This is host-facing presentation only and does not alter Tiinex carrier dimensions or semantic lineage.
@@ -100,6 +116,6 @@ When suggesting ChatGPT conversation titles, render branch dimensions with space
 
 # Continuity Integrity
 
-- sha256-base64url-c14n-v2
+- [sha256-base64url-c14n-v2](https://github.com/Tiinex/docs/blob/3988951208eb9a8926e84ab42625d4b42fa00c2d/.topics/.validators/sha256-base64url-c14n-v2.validator.md)
   - Towards: self
-  - Value:Q2QPkKJl7YLv2hS-rdH63_5T3AG4yI-quUtRh1OCvsc
+  - Value: M_2YcZyY0So8fer3VakKfzc8I7_eu7diPVabbEEDGRY
